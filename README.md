@@ -11,6 +11,12 @@ Machine learning model to predict aircraft taxi times at Manchester Airport usin
 - **MAE**: 3.6 seconds
 - **RMSE**: 18.6 seconds
 
+### Model Performance Visualization
+
+![Model Performance](real_turnaround_prediction_results.png)
+
+*Comprehensive model evaluation showing actual vs predicted values, residuals, feature importance, and error distribution*
+
 ### Key Findings
 - **Queue size** is the dominant predictor (87.4% importance)
 - **Traffic density** significantly impacts taxi time (5.5% importance)
@@ -22,6 +28,12 @@ Machine learning model to predict aircraft taxi times at Manchester Airport usin
 - Manchester Airport network: 285 nodes, 305 edges, 105 gates
 - Primary runway: 23R/05L (90% of operations)
 - Average traffic: 5 concurrent moving aircraft
+
+### Data Analysis Visualization
+
+![Data Analysis](real_data_analysis.png)
+
+*Comprehensive analysis of taxi times, traffic patterns, queue impacts, and operational characteristics*
 
 ## Installation
 

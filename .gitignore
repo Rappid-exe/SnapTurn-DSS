@@ -18,9 +18,8 @@ USAGE_GUIDE.md
 REAL_DATA_FINDINGS.md
 PROJECT_STRUCTURE.txt
 
-# Visualizations (keep only key ones)
+# Visualizations - exclude synthetic ones
 turnaround_prediction_results.png
-real_data_analysis.png
 
 # IDE
 .vscode/
