@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Data files
+*.csv
+*.pkl
+Processed ABSD data/
+
+# Documentation bloat
+INDEX.md
+PROJECT_SUMMARY.md
+QUICK_START.md
+USAGE_GUIDE.md
+REAL_DATA_FINDINGS.md
+PROJECT_STRUCTURE.txt
+
+# Visualizations (keep only key ones)
+turnaround_prediction_results.png
+real_data_analysis.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
