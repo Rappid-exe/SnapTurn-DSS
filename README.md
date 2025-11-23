@@ -137,6 +137,25 @@ This model predicts **taxi time** - the time an aircraft spends taxiing between 
 - Holding time at the runway
 - Time spent in the air
 
+### Full Turnaround Time Comparison
+
+![Turnaround Time Comparison](turnaround_time_comparison.png)
+
+*Complete turnaround time breakdown comparing short-haul domestic vs long-haul international flights*
+
+**Total Turnaround Times:**
+- **Short-Haul (Domestic/European)**: ~57 minutes
+  - Arrival taxi: 6.4 min
+  - Gate operations: 37.5 min
+  - Departure taxi: 12.7 min
+  
+- **Long-Haul (International)**: ~94 minutes
+  - Arrival taxi: 6.4 min
+  - Gate operations: 75.0 min
+  - Departure taxi: 12.7 min
+
+**Note**: Our model predicts only the taxi times (arrival + departure = ~19 min). Gate operation times are industry standard estimates.
+
 ### Model Interpretation
 - **Departures** take ~2x longer than arrivals (12.7 min vs 6.4 min on average)
 - **Queue size** is the strongest predictor - more aircraft waiting = longer taxi times
