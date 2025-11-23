@@ -27,25 +27,22 @@ for file in essential_files:
     if not exists:
         all_good = False
 
-# Check old files are archived
+# Check old files are NOT in main directory
 old_files = [
     'real_turnaround_model.pkl',
     'train_real_model.py',
     'analyze_real_data.py'
 ]
 
-print("\n2. CHECKING OLD FILES ARE ARCHIVED")
+print("\n2. CHECKING OLD FILES NOT IN MAIN DIRECTORY")
 for file in old_files:
     in_main = os.path.exists(file)
-    in_archive = os.path.exists(f'old_incorrect_files/{file}')
     
     if in_main:
-        print(f"   ❌ {file} - Still in main directory (should be archived)")
+        print(f"   ❌ {file} - Still in main directory (should be removed)")
         all_good = False
-    elif in_archive:
-        print(f"   ✅ {file} - Correctly archived")
     else:
-        print(f"   ⚠️  {file} - Not found (may have been deleted)")
+        print(f"   ✅ {file} - Not in main directory (correct)")
 
 # Check model loads correctly
 print("\n3. CHECKING MODEL")
