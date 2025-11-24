@@ -137,24 +137,24 @@ This model predicts **taxi time** - the time an aircraft spends taxiing between 
 - Holding time at the runway
 - Time spent in the air
 
-### Full Turnaround Time Comparison
+### Full Ground Turnaround Time Comparison
 
-![Turnaround Time Comparison](turnaround_time_comparison.png)
+![Actual Turnaround Time Comparison](actual_turnaround_comparison.png)
 
-*Complete turnaround time breakdown comparing short-haul domestic vs long-haul international flights*
+*Ground turnaround time breakdown based on actual Manchester Airport data (18,471 complete turnarounds)*
 
-**Total Turnaround Times:**
-- **Short-Haul (Domestic/European)**: ~57 minutes
-  - Arrival taxi: 6.4 min
-  - Gate operations: 37.5 min
-  - Departure taxi: 12.7 min
+**Total Ground Turnaround Times:**
+- **Short-Haul (European)**: ~59 minutes
+  - Arrival taxi: 5.8 min (measured)
+  - Gate operations: 40 min (estimated)
+  - Departure taxi: 13.0 min (measured)
   
-- **Long-Haul (International)**: ~94 minutes
-  - Arrival taxi: 6.4 min
-  - Gate operations: 75.0 min
-  - Departure taxi: 12.7 min
+- **Long-Haul (Intercontinental)**: ~109 minutes
+  - Arrival taxi: 5.8 min (measured)
+  - Gate operations: 90 min (estimated)
+  - Departure taxi: 13.0 min (measured)
 
-**Note**: Our model predicts only the taxi times (arrival + departure = ~19 min). Gate operation times are industry standard estimates.
+**Note**: Taxi times are measured from actual data. Gate operation times are industry estimates based on aircraft type. Our model predicts taxi times with ±2 minute accuracy.
 
 ### Model Interpretation
 - **Departures** take ~2x longer than arrivals (12.7 min vs 6.4 min on average)
